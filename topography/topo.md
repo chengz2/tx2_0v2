@@ -22,13 +22,13 @@ cd ..
 
 Run:
 ```
-qsub run_create_topo.tx2_0v1.pbs
+qsub run_create_topo.tx2_0v2.pbs
 ```
 This step creates the basic topography file with **raw cell-level depth statistics** and a **first-cut land mask**.
 
 **Output**
 ```
-topo.sub150.tx2_0v1.SRTM15_V2.4.nc
+topo.sub150.tx2_0v2.SRTM15_V2.4.nc
 ```
 
 ---

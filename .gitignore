@@ -1,1 +1,15 @@
+*.in
 *.nc
+*.o*
+*.swp
+*.ipynb_checkpoints
+*__pycache__
+
+topography/src/append_topo_interp_smooth
+topography/src/constants.mod
+topography/src/create_model_topo
+topography/src/kinds.mod
+topography/src/mom6_grid.mod
+topography/src/ncdf_wrapper.mod
+topography/src/sorting.mod
+topography/src/test_grid
