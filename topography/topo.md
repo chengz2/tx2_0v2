@@ -37,13 +37,13 @@ topo.sub150.tx2_0v2.SRTM15_V2.4.nc
 
 Notebook:
 ```
-MaskEdit_tx2_0v1.ipynb
+MaskEdit_tx2_0v2.ipynb
 ```
 This notebook edits the land mask, including **removing 1-point bays around Greenland and Antarctica**.
 
 **Output**
 ```
-topo.sub150.tx2_0v1.SRTM15_V2.4.edit1.nc
+topo.sub150.tx2_0v2.SRTM15_V2.4.edit1.nc
 ```
 
 ---
@@ -52,13 +52,13 @@ topo.sub150.tx2_0v1.SRTM15_V2.4.edit1.nc
 
 Run:
 ```
-qsub run_append_topo_interp_smooth_tx2_0v1.pbs
+qsub run_append_topo_interp_smooth_tx2_0v2.pbs
 ```
 This step appends a new depth variable **`D_interp`** to the topography file with **lightly smoothed depths**.
 
 **Output**
 ```
-topo.sub150.tx2_0v1.SRTM15_V2.4.edit1.SmL1.0_C1.0.nc
+topo.sub150.tx2_0v2.SRTM15_V2.4.edit1.SmL1.0_C1.0.nc
 ```
 
 ---
@@ -67,14 +67,14 @@ topo.sub150.tx2_0v1.SRTM15_V2.4.edit1.SmL1.0_C1.0.nc
 
 Notebook:
 ```
-Append_topo_edits_tx2_0v1.ipynb
+Append_topo_edits_tx2_0v2.ipynb
 ```
 This notebook applies **hand edits to depths for straits and channels**.
 This step produces the **final model input topography**.
 
 **Output**
 ```
-topo.sub150.tx2_0v1.SRTM15_V2.4.edit2.SmL1.0_C1.0.nc
+topo.sub150.tx2_0v2.SRTM15_V2.4.edit2.SmL1.0_C1.0.nc
 ```
 Final topography variable used by the model:
 ```
@@ -87,12 +87,12 @@ D_edit2
 
 Notebook:
 ```
-Channel_width_tx2_0v1.ipynb
+Channel_width_tx2_0v2.ipynb
 ```
 Creates the **channel width file** used by the model.
 
 **Output**
 ```
-channels_tx2_0v1_[yymmdd].txt
+channels_tx2_0v2_[yymmdd].txt
 ```
 
